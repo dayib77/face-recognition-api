@@ -20,7 +20,7 @@ const corsOptions = {
   Credentials: true,
 };
 
-const app = express();
+const app = express(); // Initialize Express app
 app.use(helmet()); // Use Helmet for security headers
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
